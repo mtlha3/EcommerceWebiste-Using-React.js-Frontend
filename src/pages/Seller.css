@@ -1,0 +1,40 @@
+
+
+.seller-page {
+    text-align: center;
+    margin: 20px;
+}
+
+.seller-auth-forms {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sign-in-section, .sign-up-section {
+    width: 45%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.home-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.home-button{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+}
+
+.home-button btn{
+    width: 120px;
+    height: 50px;
+    margin-bottom: 20px;
+}

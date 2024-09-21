@@ -1,0 +1,11 @@
+.buttonHome{
+    width: 120px;
+    height: 50px;
+
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

@@ -1,0 +1,126 @@
+.navbar {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  background-color: #0B7BBC;
+  z-index: 1000;
+  height: auto;
+}
+
+.navbar-nav {
+  margin-left: 250px;
+}
+
+.nav-item button {
+  margin-left: 70px;
+  height: 40px;
+}
+
+.nav-item a {
+  color: white;
+}
+
+.nav-item input {
+  margin-top: 10px;
+  margin-left: 50px;
+  border-radius: 10px;
+  height: 40px;
+}
+
+.nav-item .cart {
+  position: relative; /* Ensure the cart icon is the reference point for the count */
+}
+
+.nav-item .cart i {
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px; /* Adjust as needed */
+  right: -10px; /* Adjust as needed */
+  background-color: red; /* Background color for visibility */
+  color: white; /* Text color */
+  border-radius: 50%; /* Make it circular */
+  padding: 3px 6px; /* Adjust padding for size */
+  font-size: 14px; /* Font size */
+  font-weight: bold; /* Bold text */
+}
+
+.container-fluid a {
+  color: white;
+}
+
+.container-fluid a:hover {
+  color: black;
+}
+
+.navbar-toggler {
+  border: 1px solid white;
+  background-color: #0B7BBC;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.navbar-toggler-icon {
+  background-image: none;
+}
+
+.navbar-toggler::before,
+.navbar-toggler::after,
+.navbar-toggler .line-3 {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  margin: 5px auto;
+}
+
+
+
+.search-results {
+  position: absolute;
+  background-color: #0B7BBC;
+  color: black;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.search-results li {
+  padding: 10px;
+  cursor: pointer;
+  color: black;
+}
+
+.search-results li:hover {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+
+
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 0;
+  }
+
+  .navbar-collapse {
+    justify-content: center;
+  }
+}
