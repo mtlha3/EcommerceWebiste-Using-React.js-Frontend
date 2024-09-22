@@ -3,8 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { useCart } from '../context/CartContext';
 import './Card.css';
 
-const Card = () => {
-  const { cart, addToCart } = useCart(); // Use the context
+const Card = ({ userRole }) => {
+  const { addToCart } = useCart(); // Use the context
   const [products, setProducts] = useState([]);
 
   // Fetch product data from the API
@@ -30,7 +30,10 @@ const Card = () => {
           <h3 className="product-title">{product.title}</h3>
           <p className="product-description">{product.description.slice(0, 100)}...</p>
           <p className="product-price">${product.price.toFixed(2)}</p>
-          <button onClick={() => addToCart(product)}>Add to Cart</button>
+          {/* Only show "Add to Cart" button if the userRole is not 'admin' */}
+          {userRole !== 'admin' && (
+            <button onClick={() => addToCart(product)}>Add to Cart</button>
+          )}
         </div>
       ))}
     </div>
